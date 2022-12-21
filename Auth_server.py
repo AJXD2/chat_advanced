@@ -8,8 +8,8 @@ from flask_restful import Api, Resource
 
 app = Flask(__name__)
 api = Api(app)
-ips = {}
-servers = []
+ips = {0: ['127.0.0.1', 8892]}
+servers = ['Funny']
 
 def signal_handler():
     try:
@@ -43,6 +43,7 @@ class serverlistapi(Resource):
             return ips[id]
         except:
             return 'Invalid'
+
 api.add_resource(serverapi, "/serverlist/")
 api.add_resource(serverlistapi, "/getserver/<int:id>")
 api.add_resource(modifyserverapi, "/modify/")
