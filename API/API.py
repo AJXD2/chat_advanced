@@ -36,7 +36,7 @@ def update_files():
 
 class serverapi(Resource):
     def get(self):
-        return {'servers': servers, 'icons': server_icons}
+        return servers
 
 class modifyserverapi(Resource):
     def post(self):
@@ -97,7 +97,7 @@ class Register_User(Resource):
 class serverlistapi(Resource):
     def get(self, id):
         try:
-            return [ips[id], 'base64_shit']
+            return ips[id]
         except:
             return 'Invalid'
 
