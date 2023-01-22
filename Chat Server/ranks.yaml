@@ -1,0 +1,11 @@
+owner:
+  display: Owner
+  administrator: True
+  prefix: "[OWNER] "
+  suffix: ""
+
+default:
+  display: Default
+  administrator: False
+  prefix: ""
+  suffix: "" 

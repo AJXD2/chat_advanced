@@ -6,25 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>486</width>
-    <height>560</height>
+    <width>800</width>
+    <height>600</height>
    </rect>
-  </property>
-  <property name="mouseTracking">
-   <bool>true</bool>
-  </property>
-  <property name="tabletTracking">
-   <bool>true</bool>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
-  </property>
-  <property name="windowIcon">
-   <iconset>
-    <normaloff>icon.png</normaloff>icon.png</iconset>
-  </property>
-  <property name="autoFillBackground">
-   <bool>false</bool>
   </property>
   <property name="styleSheet">
    <string notr="true">QToolTip
@@ -509,40 +496,17 @@ QCheckBox::indicator:disabled, QRadioButton::indicator:disabled
 }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="LoginButton">
+   <widget class="QTextBrowser" name="History">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>7</y>
-      <width>80</width>
-      <height>23</height>
+      <x>368</x>
+      <y>0</y>
+      <width>431</width>
+      <height>541</height>
      </rect>
     </property>
-    <property name="text">
-     <string>Login</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="LogoutButton">
-    <property name="geometry">
-     <rect>
-      <x>315</x>
-      <y>7</y>
-      <width>80</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Logout</string>
-    </property>
-   </widget>
-   <widget class="QTextBrowser" name="Messages">
-    <property name="geometry">
-     <rect>
-      <x>1</x>
-      <y>71</y>
-      <width>480</width>
-      <height>310</height>
-     </rect>
+    <property name="cursor" stdset="0">
+     <cursorShape>BlankCursor</cursorShape>
     </property>
     <property name="html">
      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
@@ -551,205 +515,73 @@ p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
-    <property name="openExternalLinks">
-     <bool>true</bool>
-    </property>
    </widget>
-   <widget class="QLineEdit" name="MsgBox">
-    <property name="enabled">
-     <bool>false</bool>
-    </property>
+   <widget class="QLineEdit" name="Command">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>390</y>
-      <width>405</width>
-      <height>19</height>
+      <x>370</x>
+      <y>549</y>
+      <width>431</width>
+      <height>41</height>
      </rect>
     </property>
    </widget>
-   <widget class="QPushButton" name="SendButton">
-    <property name="enabled">
-     <bool>false</bool>
-    </property>
+   <widget class="QListView" name="UserList">
     <property name="geometry">
      <rect>
-      <x>405</x>
-      <y>390</y>
-      <width>77</width>
-      <height>20</height>
+      <x>-3</x>
+      <y>49</y>
+      <width>371</width>
+      <height>400</height>
      </rect>
     </property>
-    <property name="text">
-     <string>Send</string>
-    </property>
    </widget>
-   <widget class="QPushButton" name="DisconnectButton">
-    <property name="enabled">
-     <bool>false</bool>
-    </property>
+   <widget class="QPushButton" name="StopButton">
     <property name="geometry">
      <rect>
-      <x>161</x>
-      <y>34</y>
-      <width>94</width>
+      <x>280</x>
+      <y>560</y>
+      <width>75</width>
       <height>23</height>
      </rect>
     </property>
     <property name="text">
-     <string>Disconnect</string>
+     <string>Stop</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="IpBox">
+   <widget class="QPushButton" name="KickAllButton">
     <property name="geometry">
      <rect>
-      <x>46</x>
-      <y>9</y>
-      <width>113</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string extracomment="IP"/>
-    </property>
-    <property name="inputMask">
-     <string/>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="PortBox">
-    <property name="geometry">
-     <rect>
-      <x>46</x>
-      <y>29</y>
-      <width>113</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="ConnectButton">
-    <property name="enabled">
-     <bool>true</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>161</x>
-      <y>9</y>
-      <width>95</width>
+      <x>280</x>
+      <y>520</y>
+      <width>75</width>
       <height>23</height>
      </rect>
     </property>
     <property name="text">
-     <string>Connect</string>
+     <string>Kickall</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>18</x>
+      <x>139</x>
       <y>11</y>
-      <width>21</width>
-      <height>16</height>
+      <width>70</width>
+      <height>24</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
     </property>
     <property name="text">
-     <string>IP:</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>17</x>
-      <y>30</y>
-      <width>26</width>
-      <height>13</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Port:</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="SignUpButton">
-    <property name="geometry">
-     <rect>
-      <x>400</x>
-      <y>34</y>
-      <width>79</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Signup</string>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="ServerListBox">
-    <property name="geometry">
-     <rect>
-      <x>32</x>
-      <y>437</y>
-      <width>411</width>
-      <height>22</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>211</x>
-      <y>418</y>
-      <width>60</width>
-      <height>13</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Server List</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="ReloadButton">
-    <property name="geometry">
-     <rect>
-      <x>450</x>
-      <y>439</y>
-      <width>21</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>C:/Users/Antho/Downloads/icons8-reset-96.png</normaloff>C:/Users/Antho/Downloads/icons8-reset-96.png</iconset>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="debugbutton">
-    <property name="geometry">
-     <rect>
-      <x>5</x>
-      <y>534</y>
-      <width>107</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>debug button</string>
+     <string>Users</string>
     </property>
    </widget>
   </widget>
  </widget>
- <tabstops>
-  <tabstop>IpBox</tabstop>
-  <tabstop>ConnectButton</tabstop>
-  <tabstop>LogoutButton</tabstop>
-  <tabstop>LoginButton</tabstop>
-  <tabstop>PortBox</tabstop>
-  <tabstop>DisconnectButton</tabstop>
-  <tabstop>Messages</tabstop>
-  <tabstop>MsgBox</tabstop>
-  <tabstop>SendButton</tabstop>
- </tabstops>
  <resources/>
  <connections/>
 </ui>
