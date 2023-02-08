@@ -1,4 +1,5 @@
 # Advanced Chat app
+#### Please suggest features and report bugs you find. Thank You!
 
 ## TODO
   - API
