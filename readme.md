@@ -3,15 +3,15 @@
 
 ## TODO
   - API
-    - Database
-    - Flask-Restful
+    - <span style='color:green'>Complete!</span>
   - GUI
     - PYQT5 Designer Design
   - SERVER
-    - API Integration
+    - API Integration (Working on now ) 2/11/23
 
 # PATHS
-
-### API: `/recode/api/`
-### SERVER: `/recode/server/`
-### CLIENT `/recode/client/`
+```yaml
+API: /recode/api/
+SERVER: /recode/server/
+CLIENT: /recode/client/
+```
